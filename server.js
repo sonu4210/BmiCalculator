@@ -10,6 +10,14 @@ app.get("/bmicalculator" ,function(req,res){
 
 });
 
+app.get("/" ,function(req,res){
+
+    return res.json({
+        Status:"OK"
+    })
+
+});
+
 app.post("/bmicalculator", function(req,res){
     var weight=parseFloat(req.body.weight);
     var height=parseFloat(req.body.height);
